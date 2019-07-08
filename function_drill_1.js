@@ -1,5 +1,5 @@
 function  getYearOfBirth(age){
-	if (age < 1) {
+	if (age < 0) {
 		throw new Error('Age can not be negative');
 	}
 	return 2019 - age;
@@ -9,6 +9,13 @@ function createGreeting(name, age){
 	if (!name || !age){
 		throw new Error('Arguments not valid');
 	}
+	if (typeof name != "string" ) {
+		throw new Error('name must be a string');
+	}
+	if (typeof age !== "number")  {
+		throw new Error('Age must be a number');
+	}
+
     const yob = getYearOfBirth(age);
 	return `Hi, my name is ${name} and I'm ${age} years old. I was born in ${yob} ` ;
 }
