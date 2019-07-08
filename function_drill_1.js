@@ -30,4 +30,3 @@ try {
 // const greeting1 = createGreeting("Fabian", -23);
 
 
-//console.log("hello")
