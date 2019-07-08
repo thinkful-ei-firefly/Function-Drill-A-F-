@@ -2,16 +2,16 @@ const randomNo = Math.floor(Math.random() * 3) + 1;
   // console.log(randomNo);
 
   if (num === randomNo) {
-    return 'tie';
+    return 'Tie';
   } else if (num === 1 && randomNo === 3) {
-    return 'you win!'
+    return 'You win!'
   } else if (num === 3 && randomNo === 2) {
-    return 'you win!';
+    return 'You win!';
   } else if (num === 2 && randomNo === 1) {
-    return 'you win!';
+    return 'You win!';
   }
   else {
-    return 'you lose'
+    return 'You lose! Try again.'
   }
 }
 
